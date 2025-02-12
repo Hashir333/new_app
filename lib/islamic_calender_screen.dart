@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:islamic_hijri_calendar/islamic_hijri_calendar.dart';
-import 'package:new_project/prayer_time_screen.dart';
 
 class HijriCalendarExample extends StatefulWidget {
   const HijriCalendarExample({super.key});
@@ -23,14 +22,14 @@ class _HijriCalendarExampleState extends State<HijriCalendarExample> {
         title:
             const Text("Hijri Calendar", style: TextStyle(color: Colors.white)),
         centerTitle: true,
-        leading: IconButton(
-            onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => NamazTimingsScreen()));
-            },
-            icon: Icon(Icons.menu)),
+        // leading: IconButton(
+        //     onPressed: () {
+        //       Navigator.push(
+        //           context,
+        //           MaterialPageRoute(
+        //               builder: (context) => NamazTimingsScreen()));
+        //     },
+        //     icon: Icon(Icons.menu)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
